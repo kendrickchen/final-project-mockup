@@ -34,3 +34,24 @@ FlowRouter.notFound = {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
   },
 };
+
+FlowRouter.route('/terms', {
+  name: 'Terms_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Terms_Page' });
+  },
+});
+
+FlowRouter.route('/profile', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
+  },
+});
+
+FlowRouter.route('/browse', {
+  name: 'Browse_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Browse_Page' });
+  },
+});

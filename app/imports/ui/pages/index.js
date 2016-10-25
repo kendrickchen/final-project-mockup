@@ -8,3 +8,12 @@ import './home-page.html';
 
 import './list-stuff-page.html';
 import './list-stuff-page.js';
+
+import './terms-page.html';
+import './terms-page.js';
+
+import './profile.html';
+import './profile.js';
+
+import './browse.html';
+import './browse.js';
