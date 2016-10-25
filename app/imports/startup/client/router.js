@@ -8,13 +8,6 @@ FlowRouter.route('/', {
   },
 });
 
-FlowRouter.route('/terms-of-use', {
-  name: 'Terms_Page',
-  action() {
-    BlazeLayout.render('App_Body', { main: 'Terms_Page' });
-  },
-});
-
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {
@@ -29,6 +22,12 @@ FlowRouter.route('/add', {
   },
 });
 
+FlowRouter.route('/stuff/:_id', {
+  name: 'Edit_Stuff_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Stuff_Page' });
+  },
+});
 
 FlowRouter.notFound = {
   action() {
